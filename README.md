@@ -1,5 +1,5 @@
 <h1 align="center">Ghost Key</h1>
-<p align="center">A Simple Linux Kernel Module Keylogger</p><br />
+<p align="center">A Simple Linux Kernel Module Keylogger</p>
 <p align="center">Project made in collaboration with Kyle Welsh and Thomas Neumann</p>
 
 ## Features
