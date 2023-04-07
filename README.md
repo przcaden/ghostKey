@@ -12,14 +12,14 @@ The purpose of this project is to simply better understand Linux Modules, as wel
 this project, which was our term long project in Operating Systems at Norht Central College, one can gain a better understanding
 of Linux Kernel Modules and interrupt handlers in Kernel Space.
 
-## Important Information
+## :page_facing_up: Important Information
 It is important to note that normally in an interrupt handler pr_info() should not be used. This project
 could be improved upon by threading our kernel module, as well as printing output to a seperate server. If one would
 actually want to get a users passcode, they must add functionality to this module, as it does not yet print output
 to a seperate server, rather, it prints to the same device in which the module is located on. The password is still
 successfully printed, however, there is no way for an unethical individual to access said password with this module.<br />
 
-## Using the Module
+## 💡 Using the Module
   Step 1: Clone the repo from GitHub.<br />
   Step 2: CD to the destination at which the cloned files are located.<br />
   Step 3: If you do not have the 'ghostKey.ko' file, run the 'make' command.<br />
@@ -29,12 +29,12 @@ successfully printed, however, there is no way for an unethical individual to ac
   Step 7: Type in 'sudo rmmod ghostKey.ko'<br />
   Step 8: To view the information 'sudo dmesg'<br />
   
-## Important Note
+## :grey_exclamation: Important Note
 Occasionally the printed out password will involve a certain key multiplied by two. This will be notfied to the user
 through a message printed to the same output as the password. When such an error occurs, just remove the most recent
 key that is above a series of "signal error" messages. This will allow you to obtain the password<br />
 
-## Known Issue
+## ‼️ Known Issue
 Rarely, the error catcher will not realize an error has occured during the IRQ, and two of the same key will be printed
 without a warning. In this situation, one should note that the key printed twice is always at a consistent unrealistic time
 based on how a user types.<br />
@@ -43,13 +43,13 @@ based on how a user types.<br />
     - This happens less than 10% of the time in most machine states.
     - Can be solved through output comparisons. (Program to be made at a later date).
   
-## Further Information
+## :bookmark_tabs: Further Information
 It is believed that the signalling issue will be solved once server output is implemented. If not, another program will be made to compare
 time stamps and characters to instantly remove these duplicate presses. With this program, a password should be able to be obtained one password
 input with 100% accurary, as it simply records the keys. If "sudo" is typed again before another password input, one should be able to logically
 tell that the input was a command, not the password.
  
-## Future Updates
+## 🔄 Future Updates
 Since this project was done as a project for a undergraduate college-level course, we were limtied on time. However, there are more features we would
 like to add over time.
   - Functionality to send the password to a personal server.
